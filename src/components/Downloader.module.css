@@ -1,12 +1,9 @@
-.download-form__container {
-}
-
 .download-form__wrapper {
 	width: 600px;
 	border-radius: 10px;
 	padding: 20px;
 	background-color: aliceblue;
-  border: 1px solid black;
+	border: 1px solid black;
 }
 
 .download-form__header {
@@ -38,26 +35,18 @@
 	cursor: pointer;
 }
 
-
-
-
 .hidden-block {
 	border-radius: 10px;
 	padding: 20px;
 	background-color: aliceblue;
 	border: 1px solid black;
-  text-align: center;
+	text-align: center;
 }
-
-
 
 .download-form__button-wrapper {
 	display: flex;
 	justify-content: center;
 }
-
-
-
 
 .download-form__button-approve {
 	width: 100px;
