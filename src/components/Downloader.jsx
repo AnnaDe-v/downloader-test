@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 import styles from './Downloader.module.css'
 
 export default function Downloader() {
@@ -43,36 +44,40 @@ export default function Downloader() {
 
 	return (
 		<>
-			<div className={styles['download-form__wrapper']}>
-				<h1 className={styles['download-form__header']}>Downloader</h1>
-				<input
-					className={styles['download-form__input']}
-					name='url'
-					type='text'
-					value={urlValue}
-					onChange={e => {
-						setURLValue(e.target.value)
-					}}
-				/>
-				<button
-					className={styles['download-form__button']}
-					onClick={() => fetchURL(urlValue)}
-					disabled={isLoading}
-				>
-					{isLoading ? 'Loading...' : 'Search'}
-				</button>
-				<div
-					className={
-						requestStatus == 'error'
-							? styles['download-form__error-active']
-							: styles['download-form__error-hide']
-					}
-				>
-					Required file not found or link is not avalible
+			<div className={styles['download-form__container']}>
+				<div className={styles['download-form__wrapper']}>
+					<h1 className={styles['download-form__header']}>Downloader</h1>
+					<input
+						className={styles['download-form__input']}
+						name='url'
+						type='text'
+						value={urlValue}
+						onChange={e => {
+							setURLValue(e.target.value)
+						}}
+					/>
+					<button
+						className={styles['download-form__button']}
+						onClick={() => fetchURL(urlValue)}
+						disabled={isLoading}
+					>
+						{isLoading ? 'Loading...' : 'Search'}
+					</button>
+					<div
+						className={
+							requestStatus == 'error'
+								? styles['download-form__error-active']
+								: styles['download-form__error-hide']
+						}
+					>
+						Required file not found or link is not avalible
+					</div>
 				</div>
+
 				{requestStatus === 'success' && (
-					<div>
-						<div>File for downloading is finded</div>
+
+					<div className={styles['hidden-block']}>
+						<div>File prepared for download</div>
 						<div className={styles['download-form__button-wrapper']}>
 							<button
 								className={styles['download-form__button-approve']}

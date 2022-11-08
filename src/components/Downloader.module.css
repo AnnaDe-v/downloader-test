@@ -1,81 +1,97 @@
+.download-form__container {
+}
+
 .download-form__wrapper {
-  width: 600px;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: aliceblue;
+	width: 600px;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: aliceblue;
+  border: 1px solid black;
 }
 
 .download-form__header {
-  font-size: 30px;
-  font-family: "Inter", sans-serif;
+	font-size: 30px;
+	font-family: 'Inter', sans-serif;
 }
 
 .download-form__input {
-  width: 100%;
-  height: 60px;
-  outline: none;
-  font-size: 17px;
-  padding: 0 17px;
-  margin-top: 10px;
-  border-radius: 5px;
-  bottom: 1px solid #ff000000;
+	width: 100%;
+	height: 60px;
+	outline: none;
+	font-size: 17px;
+	padding: 0 17px;
+	margin-top: 10px;
+	border-radius: 5px;
+	bottom: 1px solid #ff000000;
 }
 
 .download-form__button {
-  width: 100%;
-  border: none;
-  outline: none;
-  color: #fff;
-  padding: 15px 0;
-  margin: 15px 20px 20px 0px;
-  border-radius: 5px;
-  background-color: blueviolet;
-  font-size: 15px;
-  cursor: pointer;
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 15px 0;
+	margin: 15px 20px 20px 0px;
+	border-radius: 5px;
+	background-color: blueviolet;
+	font-size: 15px;
+	cursor: pointer;
 }
 
-.download-form__button-wrapper {
-  display: flex;
-  justify-content: center;
-  
+
+
+
+.hidden-block {
+	border-radius: 10px;
+	padding: 20px;
+	background-color: aliceblue;
+	border: 1px solid black;
+  text-align: center;
 }
+
+
+
+.download-form__button-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+
 
 
 .download-form__button-approve {
-  width: 100px;
-  border: none;
-  outline: none;
-  color: #fff;
-  padding: 15px 0;
-  margin-top: 20px;
-  border-radius: 5px;
-  background-color: rgb(25, 91, 8);
-  font-size: 15px;
-  cursor: pointer;
+	width: 100px;
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 15px 0;
+	margin-top: 20px;
+	border-radius: 5px;
+	background-color: rgb(25, 91, 8);
+	font-size: 15px;
+	cursor: pointer;
 }
 
 .download-form__button-reject {
-
-  width: 100px;
-  border: none;
-  outline: none;
-  color: #fff;
-  padding: 15px 0;
-  margin-top: 20px;
-  margin-left: 10px;
-  border-radius: 5px;
-  background-color: rgb(184, 0, 0);
-  font-size: 15px;
-  cursor: pointer;
+	width: 100px;
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 15px 0;
+	margin-top: 20px;
+	margin-left: 10px;
+	border-radius: 5px;
+	background-color: rgb(184, 0, 0);
+	font-size: 15px;
+	cursor: pointer;
 }
 
 .download-form__error-hide {
-  color: red;
-  display: none;
+	color: red;
+	display: none;
 }
 
 .download-form__error-active {
-  display: block;
-  color: red;
+	display: block;
+	color: red;
 }
-
