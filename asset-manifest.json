@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/downloader-test/static/css/main.7916c35e.css",
+    "main.js": "/downloader-test/static/js/main.1f3107e3.js",
+    "index.html": "/downloader-test/index.html",
+    "main.7916c35e.css.map": "/downloader-test/static/css/main.7916c35e.css.map",
+    "main.1f3107e3.js.map": "/downloader-test/static/js/main.1f3107e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7916c35e.css",
+    "static/js/main.1f3107e3.js"
+  ]
+}
