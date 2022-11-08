@@ -68,3 +68,14 @@
   font-size: 15px;
   cursor: pointer;
 }
+
+.download-form__error-hide {
+  color: red;
+  display: none;
+}
+
+.download-form__error-active {
+  display: block;
+  color: red;
+}
+
