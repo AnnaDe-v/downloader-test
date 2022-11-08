@@ -76,8 +76,8 @@
 }
 
 .download-form__error-hide {
-	color: red;
-	display: none;
+	display: block;
+  visibility: hidden
 }
 
 .download-form__error-active {

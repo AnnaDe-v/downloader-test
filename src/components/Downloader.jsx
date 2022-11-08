@@ -11,7 +11,7 @@ export default function Downloader() {
 	const fetchURL = async () => {
 		setIsLoading(true)
 		try {
-			if (urlValue == '') {
+			if (urlValue === '') {
 				setRequestStatus('error')
 			} else {
 				const result = await fetch(urlValue)
@@ -52,6 +52,7 @@ export default function Downloader() {
 						name='url'
 						type='text'
 						value={urlValue}
+            placeholder='Type URL please'
 						onChange={e => {
 							setURLValue(e.target.value)
 						}}
@@ -65,7 +66,7 @@ export default function Downloader() {
 					</button>
 					<div
 						className={
-							requestStatus == 'error'
+							requestStatus === 'error'
 								? styles['download-form__error-active']
 								: styles['download-form__error-hide']
 						}
