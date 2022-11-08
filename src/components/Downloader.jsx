@@ -74,9 +74,7 @@ export default function Downloader() {
 						Required file not found or link is not avalible
 					</div>
 				</div>
-
 				{requestStatus === 'success' && (
-
 					<div className={styles['hidden-block']}>
 						<div>File prepared for download</div>
 						<div className={styles['download-form__button-wrapper']}>

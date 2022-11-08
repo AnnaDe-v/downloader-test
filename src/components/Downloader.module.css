@@ -77,7 +77,7 @@
 
 .download-form__error-hide {
 	display: block;
-  visibility: hidden
+	visibility: hidden;
 }
 
 .download-form__error-active {
